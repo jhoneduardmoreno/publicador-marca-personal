@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publicador Marca Personal</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<main>
+  <h1>Publicador Marca Personal</h1>
+  <p class="sub">Herramienta personal de Jhon Moreno para publicar sus propios vídeos verticales en sus propias cuentas de Instagram, Facebook y TikTok.</p>
+
+  <h2>Qué hace</h2>
+  <p>Es un script que se ejecuta en el ordenador de su autor. Toma un vídeo ya editado en local y lo envía a las cuentas de su propio autor:</p>
+  <ul>
+    <li><strong>Instagram y Facebook</strong>: publica el vídeo en la cuenta profesional y en la página del autor, con su texto y su portada.</li>
+    <li><strong>TikTok</strong>: sube el vídeo a los <em>borradores</em> de la cuenta del autor. No publica nada por su cuenta: el autor abre la aplicación de TikTok, revisa el vídeo y decide si lo publica.</li>
+  </ul>
+
+  <h2>Quién puede usarla</h2>
+  <p>Nadie más. No hay registro, no hay usuarios y no se ofrece como servicio. La herramienta funciona únicamente con las cuentas de su autor, autorizadas por él mismo.</p>
+
+  <h2>Alojamiento temporal de vídeos</h2>
+  <p>La API de Instagram no acepta archivos subidos directamente: exige una dirección web pública desde la que descargar el vídeo. Por eso este sitio aloja el archivo de forma <strong>temporal</strong>, en la carpeta <code>/media/</code>, durante los minutos que tarda la plataforma en descargarlo.</p>
+  <div class="caja">
+    <p><strong>Regla de borrado.</strong> Una vez el vídeo ha quedado publicado en las redes correspondientes, el archivo se elimina de este repositorio. No se conserva ningún vídeo aquí después de la publicación.</p>
+  </div>
+
+  <h2>Código</h2>
+  <p>El sitio y su contenido están en <a href="https://github.com/jhoneduardmoreno/publicador-marca-personal">github.com/jhoneduardmoreno/publicador-marca-personal</a>.</p>
+
+  <h2 class="en">In English</h2>
+  <p class="en">A personal tool used by Jhon Moreno to post his own vertical videos to his own Instagram, Facebook and TikTok accounts. It runs locally on his computer and is not offered as a service to anyone else. On TikTok it only uploads videos as <em>drafts</em>, which the author then reviews and publishes from the TikTok app. Because the Instagram API requires a publicly reachable URL instead of a file upload, videos are hosted here temporarily under <code>/media/</code> and <strong>deleted from this repository once the video has been published</strong>.</p>
+
+  <nav>
+    <a href="terminos.html">Términos de servicio</a>
+    <a href="privacidad.html">Política de privacidad</a>
+  </nav>
+  <footer>Jhon Moreno · jhoneduardmorenoia@gmail.com</footer>
+</main>
+</body>
+</html>
