@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Autorización · Publicador Marca Personal</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<main>
+  <h1>Autorización recibida</h1>
+  <p class="sub">Esta página solo recoge el código que devuelve TikTok tras autorizar la aplicación. No guarda nada ni lo envía a ningún sitio.</p>
+  <div class="caja">
+    <p><strong>Código:</strong></p>
+    <p><code id="codigo">—</code></p>
+  </div>
+  <p id="aviso"></p>
+  <nav><a href="index.html">Inicio</a></nav>
+  <footer>Jhon Moreno · jhoneduardmorenoia@gmail.com</footer>
+</main>
+<script>
+  var p = new URLSearchParams(location.search);
+  var code = p.get('code');
+  var err = p.get('error');
+  document.getElementById('codigo').textContent = code || err || 'no se recibio ningun codigo';
+  document.getElementById('aviso').textContent = code
+    ? 'Copia este codigo y pegalo donde se te pida. Caduca en pocos minutos.'
+    : 'Si ves un error, vuelve a iniciar la autorizacion.';
+</script>
+</body>
+</html>
